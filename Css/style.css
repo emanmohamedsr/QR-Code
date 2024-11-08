@@ -1,0 +1,51 @@
+:root {
+    --bg-color: hsl(212, 45%, 89%);
+    --shadow-color: hsl(0, 0%, 100%);
+    --font-color-primary: hsl(218, 44%, 22%);
+    --font-color-secondary: hsl(216, 15%, 48%);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 15px;
+    font-family: "Outfit", sans-serif;
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main.card {
+    padding: 15px 15px 35px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 2px var(--shadow-color);
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+main.card img.QR-code {
+    max-width: 100%;
+    border-radius: 12px;
+}
+main.card h2.QR-header ,
+main.card p.QR-paragraph {
+    padding: 0 18px;
+    line-height: 1.5;
+}
+main.card h2.QR-header {
+    font-size: 15px;
+    color: var(--font-color-primary);
+    font-weight: 900;
+}
+main.card p.QR-paragraph {
+    color: var(--font-color-secondary);
+    font-weight: 400;
+    font-size: 15px;
+}
